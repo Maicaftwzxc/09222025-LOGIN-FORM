@@ -19,6 +19,18 @@
 
             //check if password is correct
 
+            if(password_verify($password, $user['password'])) {
+                echo"Login successful, Welcome", $user['fullname'];
+
+                $_SESSION['user'] = $user['email'];
+                //refirect to dashboard
+                header("Location:dashboard.php");
+            }
+
+            else {
+                echo "Wrong Password";
+            }
+
         } else {
             //email doesnt exist
             echo "NO USER WITH THAT EMAIL";
@@ -27,3 +39,4 @@
 
     }
 ?>
+
