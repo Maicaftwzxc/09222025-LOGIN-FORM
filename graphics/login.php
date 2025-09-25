@@ -24,7 +24,7 @@ session_start();
                 //echo"Login successful, Welcome", $user['fullname'];//
 
                 //set session//
-                 $_SESSION['user'] = $user;
+                 $_SESSION['user'] = $user ['email'];
 
                 //$_SESSION['user'] = $user['email'];//
 

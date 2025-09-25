@@ -16,7 +16,9 @@
 
         if($result->num_rows > 0){
         //email is already in use
-            echo "Email has already an account";
+            echo "<script>alert('Email has already an account');
+                window.location.href = 'index.php'; 
+                </script>";
             }  else {
 
             //CREATE ACCOUNT // SAVE DATA TO DATABASE
@@ -52,7 +54,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
 
-    <body class="bg-[url('https://wallpaper-house.com/data/out/7/wallpaper2you_171699.jpg')] h-screen w-full bg-cover bg-center flex justify-center mt-30 flex justify-center items-center">
+    <body class="bg-[url('https://wallpaper-house.com/data/out/7/wallpaper2you_171699.jpg')] h-screen w-full bg-cover bg-center flex justify-center items-center">
         
 
         <div class="max-w-[960px] bg-white/80 75 p-13 rounded-2xl m-6 flex justify-center items-center">
