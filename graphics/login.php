@@ -1,4 +1,5 @@
 <?php
+session_start();
 
     include "connect.php";
 
@@ -12,28 +13,37 @@
         //fetch database
 
         $sql = "SELECT * FROM users WHERE email = '$email' ";
-        $result = $conn->query(query: $sql);
+        $result = $conn->query($sql);
 
-        if ($result->num_rows > 0) {
+        if ($result && $result->num_rows > 0) {
             $user = $result->fetch_assoc();
 
             //check if password is correct
 
             if(password_verify($password, $user['password'])) {
-                echo"Login successful, Welcome", $user['fullname'];
+                //echo"Login successful, Welcome", $user['fullname'];//
 
-                $_SESSION['user'] = $user['email'];
+                //set session//
+                 $_SESSION['user'] = $user;
+
+                //$_SESSION['user'] = $user['email'];//
+
                 //refirect to dashboard
                 header("Location:dashboard.php");
+                exit();
             }
 
             else {
-                echo "Wrong Password";
+                echo "<script>alert('Wrong Password');
+                window.location.href = 'index.php'; 
+                </script>";
             }
 
         } else {
             //email doesnt exist
-            echo "NO USER WITH THAT EMAIL";
+            echo "<script>alert('No user with that email');
+                window.location.href = 'index.php'; 
+                </script>";
 
         }
 

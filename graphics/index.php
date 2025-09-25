@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -11,38 +13,31 @@
     <body class="bg-[url('https://wallpaper-house.com/data/out/7/wallpaper2you_171699.jpg')] h-screen w-full bg-cover bg-center flex justify-center mt-30 flex justify-center items-center">
         
 
-        <div class="max-w-[960px] bg-white/80 75 p-13 rounded-2xl m-6 flex justify-center items-center">
-            <div class="grid gap-5">
-                <form action="login.php" method="POST" class="space-y-5"> 
-                    <h1 class="flex justify-center items-center text-3xl font-bold">WELCOME</h1>
+            <div class="max-w-[960px] bg-white/80  p-13 rounded-2xl m-6 flex justify-center items-center">
+                <div class="grid gap-5">
+                    <form action="login.php" method="POST" class="space-y-5"> 
+                        <h1 class="flex justify-center items-center text-3xl font-bold">WELCOME</h1>
 
-                
-                    <label for="username"><br>Username<br></label> 
-                    <input type="text" name="fullname" placeholder="Enter Your Name" minlength="6" maxlength="15" required class="w-80 bg-black/20"> <br>
+                    
+                        <label for="Email"><br>Email<br></label> 
+                        <input type="text" name="email" placeholder="Enter Your Email"  required class="w-80 bg-black/20 py-2 px-2 rounded-xl" required> <br>
 
-                    <label for="email">Email<br></label>
-                    <input type="email" name="email" placeholder="Enter Your Email" required class="w-80 bg-black/20" ><br>
+                        <label for="password">Password<br></label>
+                        <input type="password" name="password" placeholder="Enter Your Password" minlength="6" maxlength="15" required class="w-80 bg-black/20 py-2 px-2 rounded-xl" > <br> <hr>
 
-                    <label for="password">Password<br></label>
-                    <input type="password" name="password" placeholder="Create Password" minlength="6" maxlength="15" required class="w-80 bg-black/20" > <br> <hr>
+                        <div class="flex justify-center">
+                        <button 
+                            type="submit"
+                            class="bg-orange-500/80 flex justify-center items-center text-sm font-semibold rounded-2xl p-2 w-50">
+                            Log in
+                        </button>
+                        </div>
+                    </form>
 
-                    <div class="flex justify-center">
-                    <button 
-                        type="submit"
-                        class="bg-orange-500/80 flex justify-center items-center text-sm font-semibold rounded-2xl p-2 w-50">
-                        Log in
-                    </button>
+                    <div class="flex justify-center cursor-pointer">
+                        <p>Don't have an account? <a class="font-bold hover:underline" href="register.php">Register</a></p>
                     </div>
-                </form>
-
-                <div class="flex justify-center">
-                    <p>Don't have an account? <a>Register</a></p>
                 </div>
             </div>
-
-            
-        </div>
     </body>
-
-
 </html>
