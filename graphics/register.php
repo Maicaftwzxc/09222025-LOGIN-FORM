@@ -72,12 +72,18 @@
                     <label for="password">Password<br></label>
                     <input type="password" name="password" placeholder="Create Password" minlength="6" maxlength="15" required class="w-80 bg-black/20 py-2 px-2 rounded-xl" > <br> <hr>
 
-                    <div class="flex justify-center">
-                    <button 
-                        type="submit"
-                        class="bg-orange-500/80 flex justify-center items-center text-sm font-semibold rounded-2xl p-2 w-50">
-                        Create Account
-                    </button>
+                    <div class="flex justify-center items-center flex-col space-y-4">
+                        <button 
+                            type="submit"
+                            class="bg-orange-500/80 flex justify-center items-center text-sm font-semibold rounded-2xl p-2 w-50 hover:bg-orange-900 hover:text-white">
+                            Create Account
+                            </button>
+
+                        <button type="button" 
+                            class="bg-orange-500/80 flex justify-center items-center text-sm font-semibold rounded-2xl p-2 w-50 hover:bg-red-900/80 hover:text-white" 
+                            onclick="window.location.href='index.php'">
+                            Cancel
+                        </button>
                     </div>
                 </form>
             </div>

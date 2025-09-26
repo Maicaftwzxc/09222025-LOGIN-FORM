@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -28,7 +26,7 @@
                         <div class="flex justify-center">
                         <button 
                             type="submit"
-                            class="bg-orange-500/80 flex justify-center items-center text-sm font-semibold rounded-2xl p-2 w-50">
+                            class="bg-orange-500/80 flex justify-center items-center text-sm font-semibold rounded-2xl p-2 w-50 hover:bg-orange-900 hover:text-white ">
                             Log in
                         </button>
                         </div>
