@@ -57,7 +57,7 @@
     <body class="bg-[url('https://wallpaper-house.com/data/out/7/wallpaper2you_171699.jpg')] h-screen w-full bg-cover bg-center flex justify-center items-center">
         
 
-        <div class="max-w-[960px] bg-white/20 backdrop-blur-md border border-white/30 p-13 rounded-2xl m-6 flex justify-center items-center">
+        <div class="max-w-[960px] bg-white/20 backdrop-blur-md border border-white/40 p-13 rounded-2xl m-6 flex justify-center items-center">
             <div class="grid gap-5">
                 <form action="register.php" method="POST" class="space-y-5"> 
                     <h1 class="flex justify-center items-center text-3xl font-bold">WELCOME</h1>
